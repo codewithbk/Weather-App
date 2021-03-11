@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font A_some cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+<body>
+ 
+    <main>
+        <div class="container">
+            <section class="section_1 space_top">
+               <div class="head">
+                <div class="w-100">
+                    <div class="row">
+                      <div class="col image_col">
+                        <div class="images" id="images_for_weather">
+                            <img src="./vendor/img/picture.png" alt="weather Condition Image" class="img-responsive weather_image" id="weather_image">
+                           </div>
+                      </div>
+                      <div class="col">
+                        <div class="text ">
+                            <div style="display: inline; " >
+                                <h1 style="display: inline;" class="temperature" id="temperature"> 0 ℃ </h1> 
+                                <h4 class="temperature_status" id="temperature_status" style="display: inline; text-transform: capitalize;"> --- </h4> <span class="time" id="times"> Load.. </span>
+                                <p class="temperature_description" id="temperature_description"> Load.....</p>
+                                <hr class="temperature_head_title_headline">
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                 
+                  
+               </div>
+            </section>
+            <section class="section_2">
+                <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">  <i class="fas fa-home"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </li>
+                 
+
+                </ul>
+                <hr style="width: 60%; margin: 0 auto;" >
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" style="border: none;" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                        <div style="width: 60%; margin: 0 auto;">
+                        <div class="row">
+                            <div class="col" >
+                                <div class="box">
+                                    <div class="wind_data_box">
+                                        <h4 class='heading_of_w_data'> <span class="wind_info_head_icon"> <i class="fas fa-temperature-low"></i> </span>  Temperature info </h4>
+                                        <div class="w_data">
+                                            <hr style="width: 60%; margin: 0 auto; margin-top: 10px; margin-bottom: 20px;" >
+                                            <h6 class="w_d_Wind_Temp_Might_Be"  >Wind Temp Might Be:-</h6>  <span id="w_d_Wind_Temp_Might_Be"  > <b>--℃ / --℉</b></span>
+                                            <br>
+                                            <h6 class="w_d_Wind_Temp_Min" >Today Temperature Min:-</h6>  <span id="w_d_Wind_Temp_Min"  > <b>--℃ / --℉</b></span>
+                                            <br>
+                                            <h6 class="w_d_Wind_Temp_Max" >Today Temperature Max:-</h6>  <span id="w_d_Wind_Temp_Max" > <b>--℃ / --℉</b></span>
+                                            <br>
+                                            <h6 class="w_d_Wind_Temps_feel_like" >Wind Temps Feels Like:-</h6>  <span id="w_d_Wind_Temps_feel_like" > <b>--℃ / --℉</b></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="col">
+                                <div class="box">
+                                    <div class="weather_gen_info">
+                                        <h4 class="heading_of_w_g_i"> <span class="icon_of_W_g_i"><i class="fas fa-wind"></i></span>  Wind info </h4>
+                                        <hr style="width: 60%; margin: 0 auto; margin-top: 10px; margin-bottom: 20px;" >
+                                        <h6 class="w_g_i_Wind_humidity" >Wind humidity:-</h6><span  id="w_g_i_Wind_humidity" > <b>00</b></span>
+                                        <br>
+                                        <h6 class="w_g_i_Wind_Pressure"  >Wind Pressure:-</h6><span id="w_g_i_Wind_Pressure" > <b>000</b></span>
+                                        <br>
+                                        <h6 class="w_g_i_Wind_Speed w_g_i_Wind_Pressure">Wind Speed:-</h6><span  id="w_g_i_Wind_Speed_w_g_i_Wind_Pressure"  > <b  >000 </b>kmph</span>
+                                        <br>
+                                        <h6 class="w_g_i_Wind_degree w_g_i_Wind_Pressure"  >Wind degree:-</h6><span id="w_g_i_Wind_degree_w_g_i_Wind_Pressure" > <b>000</b></span>
+                                        <br>
+                                        <!-- "sunrise": 1613525283,
+                                        "sunset": 1613565748 -->
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-12">
+                                <div class="box">
+                                    <div class="weather_deatail_info">
+                                        <h4 class="heading_of_w_d_i"> <span class="icon_of_W_d_i"><i class="fas fa-info-circle"></i></span>  Update Deatail </h4>
+                                        <hr style="width: 60%; margin: 0 auto; margin-top: 10px; margin-bottom: 20px;" >
+                                        
+                                      <div class="row">
+                                          <div class="col">
+                                            <h6 class="w_g_i_Weather_last_Update_on" > <b>1.</b> Weather last Update on:- </h6><span id="w_g_i_Weather_last_Update_on" > <b>12:45 AM</b></span>
+                                            <br>
+                                            <h6 class="w_g_i_Wind_info_last_Update_on" > <b>2.</b> Wind info last Update on:- </h6><span id="w_g_i_Wind_info_last_Update_on" > <b>12:45 AM</b></span>
+                                            <br>
+                                            <h6 class="w_g_i_Wind_humidity_Temperature_info_last_Update_on" > <b>3.</b> Temperature info last Update on:- </h6><span id="w_g_i_Wind_humidity_Temperature_info_last_Update_on" > <b>12:45 AM</b></span>
+                                            <br>
+                                          </div>
+                                          <div class="col">
+                                            <h6 class="w_g_i_Last_Contact_to_Server" > <b>4.</b> Last Contact to Server :- </h6><span id="w_g_i_Last_Contact_to_Server" > <b>12:45 AM</b></span>
+                                            <br>
+                                            <h6 class="w_g_i_Website_total_reload" > <b>5.</b> Website total reload:- </h6><span id="website_reload_time" > <b>6 Times</b></span>
+                                            <br>
+                                          </div>
+                                      </div>
+                                       
+                                    </div>
+                                </div>
+                              </div>
+                             
+                          </div>
+                          
+                         
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade"  id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="search_div" style="width: 60%; margin: 0 auto;  ">
+                            <div class="search_o_p_w">
+                                <input type="text" class="form-control rounder" id="search" oninput="showData()" placeholder=" 🔍 Search Another Place Weather">
+                            </div>
+                            <div  class="search_result_404" id="search_result_404">
+                                <h1 >¯\_(ツ)_/¯</h1>
+                                <p>Nothing You search !!</p>
+                            </div>
+                            
+                            <div  class="search_time_loading " id="search_time_loading">
+                                <div class="show_error">
+                                <i class="fas fa-spinner fa-pulse fa-1x"></i>
+                                <p style="font-size: 16px; margin-top: 20px">Loading Please Wait... ಠ_ಠ</p>
+                                </div>
+                            </div>
+                            <div class="search_result" id="search_result">
+                                
+    
+                            </div>
+
+                            <div class="clear_search_content" id="clear_search_content">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                  </div>
+            </section>
+
+            
+        
+
+        </div>
+        <section class="section_3_footer">
+            <div class="data_source">
+                <i  class="fas fa-location-arrow d_s_i_c"  ></i> <b> <span id="c_c_location" >In</span>, <span id="c_s_location">Delhi</span> </b> <br>
+                <i class="fas fa-database d_s_i_c "></i> Data-Base on  <b> <span id="c_where_data_base_on" style="text-transform: capitalize;" >Stations</span></b> <br>
+                <i class="far fa-clock d_s_i_c"></i> <span id="day_data" >Wed</span> - <span id="date">11/1/21</span> - <span id="time" > 2:30 <b>AM</b></span> <br>
+                <i class="fas fa-chart-area d_s_i_c">  </i> <b>  Latitude</b> <span id="latitude_of_c_location"> 28 </span> <b> Longitude </b> <span id="longitude_of_c_location"> 77 </span> 
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/basic.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/event.js" ></script> 
+    <script src="js/serachp.js"></script>
+
+
+</body>
+</html>

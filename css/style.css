@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+.head{
+    margin-top: 70px;
+}
+.weather_image{
+    float: right;
+    margin-right: 80px;
+    width: 246px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+.text{
+    margin-left: -50px;
+    margin-top: 85px;
+}
+.temperature{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 30px;
+}
+.temperature_status{
+    font-size: 30px;
+}
+.temperature_head_title_headline{
+    width:43%;
+    margin-top:-5px;
+    margin-left:10px;
+}
+.section_2{
+    margin-top: 40px;
+}
+.nav-tabs,.nav-link{
+    border: none !important; 
+}
+.nav-item {
+    margin: 20px 20px 0px 20px;
+    font-size: 25px;
+    /* border-bottom: 20px solid #000 !important; */
+    border: none !important;
+    animation-duration: 2s all;
+}
+.nav-item, .fa-home:hover,  .fa-search:hover{
+    transition: 0.4s;
+
+    color: rgb(146, 135, 245) !important;
+}
+.active{
+    border-bottom: 3px solid #000 !important;
+    
+}
+.tab-content{
+    margin-top:-10px !important;
+}
+.tab-pane{
+    border: none !important;
+}
+/* .col,.col-6{
+    border: 1px solid #000;
+} */
+
+.box{
+    padding: 20px;
+    margin:5px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    border-radius: 6px;
+    margin-top: 40px;;
+}
+.heading_of_w_data{
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.wind_info_head_icon{
+    color: rgb(245, 91, 91);
+}
+.w_d_Wind_Temp_Might_Be,
+.w_d_Wind_Temp_Min,
+.w_d_Wind_Temp_Max,
+.w_d_Wind_Temps_feel_like,
+.w_d_Wind_humidity,
+.w_g_i_Wind_humidity,
+.w_g_i_Wind_Pressure,
+.w_g_i_Wind_Speed_
+.w_g_i_Wind_degree,
+.w_g_i_Weather_last_Update_on,
+.w_g_i_Wind_info_last_Update_on,
+.w_g_i_Wind_humidity_Temperature_info_last_Update_on,
+.w_g_i_Last_Contact_to_Server,
+.w_g_i_Website_total_reload{
+    display: inline;
+    margin-right: 3px;
+}
+.heading_of_w_g_i{
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.icon_of_W_g_i{
+    color: rgb(127, 68, 223)
+    
+}
+.heading_of_w_d_i{
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.icon_of_W_d_i{
+    color: rgb(54, 50, 56)
+    
+}
+
+.data_source{
+    /* border:1px solid #000; */
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
+    margin-right: 20px;
+    margin-bottom: 10px; 
+    padding: 8px;
+}
+.d_s_i_c{
+    color: rgb(247, 91, 91);
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.search_o_p_w{
+    margin-top:30px;
+}
+.rounder{
+    padding: 15px;
+    border-radius: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.rounder:focus{
+    transition: 0.7s;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+}
+.search_result_404{
+    text-align:center;
+     margin-top:80px;
+     font: 400 36px/44px Google Sans,Helvetica Neue,sans-serif;
+    }
+.search_time_loading{
+    text-align:center;
+    margin-top:80px;
+    font: 400 36px/44px Google Sans,Helvetica Neue,sans-serif;
+    display: none;
+}    
+.search_result_200{
+    display:block;
+    margin-top:30px;
+    margin-top:30px; border-radius: 8px;
+    border: 1px solid #000;
+    padding:20px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2),0 5px 20px 0 rgba(0,0,0,0.19) !important;
+
+}
+.s_r_200_image_of_w{
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+    margin-right: 80px;
+    float: right;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+
+}
+.s_r_200_text_of_w{
+    margin-top: 20px;
+}
+.s_r_200_text_p_of_w{
+    margin-top: -5px;
+}
+.go_in_image_s{
+    margin-left: -50px;
+}
+.display_block{
+    display: block;
+    text-transform: capitalize;
+}
+.display_none{
+    display: none;
+}
