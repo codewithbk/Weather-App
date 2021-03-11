@@ -1,4 +1,4 @@
-`q# Weather-App
+# Weather-App
 
 It's is a very simple java Script Weather app 
 
